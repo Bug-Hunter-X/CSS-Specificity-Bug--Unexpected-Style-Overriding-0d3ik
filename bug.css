@@ -1,0 +1,17 @@
+The CSS specificity rules can be confusing and lead to unexpected styling issues. For example, consider the following code:
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+div p {
+  color: green; /* This will override the color of the paragraph inside the div */
+}
+```
+
+In this case, the `div p` selector is more specific than the `div` or `p` selectors, so it overrides their styles. This can be difficult to debug if you're not familiar with CSS specificity.
